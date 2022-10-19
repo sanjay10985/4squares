@@ -7,7 +7,7 @@ import {
   query,
   querySnapshot,
 } from "firebase/firestore";
-import AddPost from "./AddPost";
+import AddPost from "../components/AddPost";
 
 function FeaturedPost() {
   const [posts, setPosts] = useState([]);

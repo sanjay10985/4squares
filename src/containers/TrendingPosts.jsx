@@ -8,7 +8,7 @@ import {
 import React, { useState, useEffect } from "react";
 import { db } from "../firebase";
 import "../styles/TrendingPosts.css";
-import TrendPosts from "./TrendPosts";
+import TrendPosts from "../components/TrendPosts";
 
 function TrendingPosts() {
   const [trendPosts, setTrendPosts] = useState([]);
@@ -51,7 +51,8 @@ function TrendingPosts() {
             )}
           </div>
         </div>
-        <div className="trend-sidebar"></div>
+        <div className="trend-sidebar">
+        </div>
       </div>
     </section>
   );

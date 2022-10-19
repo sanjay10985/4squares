@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/TrendingPosts.css'
+import '../styles/TrendPost.css'
 
 const TrendPosts = (props) => {
   return (

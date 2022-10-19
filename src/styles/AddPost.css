@@ -1,12 +1,3 @@
-/* .imgbox{
-    width: 100%;
-    height:100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all .7s ease-in-out;
-} */
-
 .imgbox{
     width: 100%;
     height:100%;
@@ -22,7 +13,6 @@
     content: " ";
     width: 100%;
     height: 100%;
-    /* position: absolute;, */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)) !important;
     opacity: 1;
@@ -30,9 +20,7 @@
 }
 
 .imgbox:hover {
-    /* background-size: 200%; */
     transform: scale(1.2);
-    /* opacity: 1; */
     transition: all 1s ease-in-out;
 }
 
@@ -59,13 +47,9 @@
 }
 
 .post-discription{
-    /* top: ; */
-    /* bottom: -100px; */
-    /* top: ; */
     bottom: 57px;
     left: 22px;
     position: absolute;
-    /* display: flex; */
 }
 .featuredPost-title{
     color: white;
