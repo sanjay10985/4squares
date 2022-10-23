@@ -3,11 +3,22 @@ import "../styles/Header.css";
 import { Link } from "react-router-dom";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import LogoImage from "../logo.png";
-import SearchIcon from '@mui/icons-material/Search';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import SearchIcon from "@mui/icons-material/Search";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { IconButton } from "@mui/material";
 
 const Header = () => {
+  
+  // const clickDiv = document.getElementById("switch__div");
+  const changeTheme = (e) => {
+    const themeButton = document.getElementById("theme_switch");
+  const themeline = document.getElementById("theme__line");
+  const Icon = document.getElementById("icon");
+    themeButton.classList.toggle("button_move");
+    themeline.classList.toggle("line_color");
+    Icon.classList.toggle("fa-moon");
+    console.log()
+  }
   return (
     <div className="header">
       <nav className="navbar">
@@ -36,12 +47,26 @@ const Header = () => {
           </MenuUl>
         </div>
         <div className="nav__right">
-          <button className="nav_right_button" type="button">Subscribe!</button>
+          <div id="switch__div" onClick={changeTheme}>
+            <span id="theme__line"> </span>
+            <button id="theme_switch" type="button">
+              <i id="icon" className="fa-sharp fa-solid fa-sun"></i>
+            </button>
+          </div>
+          <button className="nav_right_button" type="button">
+            Subscribe!
+          </button>
           <IconButton>
-          <SearchIcon  className="nav_right_unused_bt" sx={{fontSize:[35], color:'gray'}}/>
+            <SearchIcon
+              className="nav_right_unused_bt"
+              sx={{ fontSize: [35], color: "gray" }}
+            />
           </IconButton>
           <IconButton>
-          <MenuOpenIcon className="nav_right_unused_bt" sx={{fontSize:[35], color:'gray'}}/>
+            <MenuOpenIcon
+              className="nav_right_unused_bt"
+              sx={{ fontSize: [35], color: "gray" }}
+            />
           </IconButton>
         </div>
       </nav>
